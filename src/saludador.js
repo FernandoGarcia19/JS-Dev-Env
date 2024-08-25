@@ -1,6 +1,13 @@
-function saludar(nombre) {
-    let Hi = "Hola";
-    const Saludo = Hi + " " + nombre;
+function saludar(nombre, genero) {
+    let Saludo = "Hola";
+    if(genero === "male"){
+        Saludo = Saludo + " Sr. ";
+    }else {
+        Saludo = Saludo + " Sra. ";
+    }
+    
+    Saludo = Saludo + " " + nombre;
+
     return Saludo;
 }
 
